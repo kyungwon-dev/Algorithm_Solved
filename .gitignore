@@ -1,0 +1,7 @@
+# add setting file
+*.
+*.json
+
+# add execute file
+
+*.exe

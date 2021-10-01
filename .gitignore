@@ -1,7 +1,10 @@
 # add setting file
-*.
+.*
 *.json
 
 # add execute file
 
 *.exe
+
+# add specific folder
+Inflearn_Algorithm_practice/

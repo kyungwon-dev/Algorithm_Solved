@@ -13,7 +13,7 @@ int main(){
 
     while(startNum!=1){
         
-        //하
+        // 하
         for(;startY<n;startY++){
             if(map[startY][startX]!=0)
                 break;
@@ -21,7 +21,7 @@ int main(){
         }
         startY--;
         startX++;
-        //우
+        // 우
         for(;startX<n;startX++){
             if(map[startY][startX]!=0)
                 break;
@@ -37,7 +37,7 @@ int main(){
         }
         startY++;
         startX--;
-        //좌
+        // 좌
         for(;startX>=0;startX--){
             if(map[startY][startX]!=0)
                 break;

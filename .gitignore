@@ -7,5 +7,6 @@
 *.exe
 
 # add specific folder
-Inflearn_Algorithm_practice/
+C++ template
+Python template
 Algorithm_Solved.code-workspace

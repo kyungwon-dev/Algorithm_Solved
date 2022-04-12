@@ -7,6 +7,5 @@
 *.exe
 
 # add specific folder
-C++ template
-Python template
+template
 Algorithm_Solved.code-workspace

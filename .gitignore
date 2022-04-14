@@ -7,5 +7,5 @@
 *.exe
 
 # add specific folder
-template
+templates
 Algorithm_Solved.code-workspace

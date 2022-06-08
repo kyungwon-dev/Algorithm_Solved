@@ -3,7 +3,6 @@
 *.json
 
 # add execute file
-
 *.exe
 
 # add specific files

@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    int T;
+    cin >> T;
+    for(int i=0;i<T;i++){
+        int N,M;
+        cin >> N >> M;
+        cout << N+M << "\n";
+    }
+    return 0;
+}

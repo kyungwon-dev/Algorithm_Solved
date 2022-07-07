@@ -8,4 +8,4 @@
 # add specific files
 templates
 Algorithm_Solved.code-workspace
-remind.md
+remind_*.md

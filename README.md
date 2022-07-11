@@ -4,5 +4,5 @@
 ## Archive Contents
 
 - 백준 : 백준 문제 풀이
-- Programmers : 프로그래머스 문제 풀이
+- 프로그래머스 : 프로그래머스 문제 풀이
 - SWEA : swexpertacademy

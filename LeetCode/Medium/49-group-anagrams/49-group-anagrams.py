@@ -9,4 +9,5 @@ class Solution:
             else:
                 anagram[sort_str].append(s)
                 
-        return sorted([v for _, v in anagram.items()], key=len)
+        # return sorted([v for _, v in anagram.items()], key=len)
+        return [v for _, v in anagram.items()]

@@ -8,4 +8,5 @@ class Solution:
                 anagram[sort_str] = [s]
             else:
                 anagram[sort_str].append(s)
-        return [v for _, v in anagram.items()]
+                
+        return sorted([v for _, v in anagram.items()], key=len)

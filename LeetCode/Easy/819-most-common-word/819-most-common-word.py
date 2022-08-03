@@ -6,5 +6,4 @@ class Solution:
         # pass
         paragraph = [param for param in re.sub(r'[^\w]', ' ', paragraph).lower().split() if param not in banned]
         return Counter(paragraph).most_common(1)[0][0]
-        return ""
         

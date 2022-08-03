@@ -6,5 +6,4 @@ class Solution:
         # while len(s) > 1:
         #     if s.pop(0) != s.pop():
         #         return False
-        return True
-        
+        # return True

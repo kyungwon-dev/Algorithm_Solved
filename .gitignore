@@ -6,6 +6,6 @@
 *.exe
 
 # add specific files
-templates
+template
 Algorithm_Solved.code-workspace
 remind_*.md

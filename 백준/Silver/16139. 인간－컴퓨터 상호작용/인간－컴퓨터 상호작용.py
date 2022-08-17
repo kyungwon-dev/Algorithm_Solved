@@ -1,22 +1,21 @@
 import sys
-keyboards = sys.stdin.readline().strip()
-alpha_sum = [ [0 for _ in range(26)] for _ in range(len(keyboards))]
-minimum = ord('a')
-alpha_sum[0][ord(keyboards[0]) - minimum] = 1
+input = sys.stdin.readline
 
-for i in range(1, len(alpha_sum)):
-    alpha = ord(keyboards[i])
-    alpha_sum[i][alpha - minimum] = 1
+keyboards = input().rstrip()
+alpha_sum = [ [0] * 26 for _ in range(len(keyboards) + 1)]
+
+for i in range(1, len(keyboards) + 1):
+    key = ord(keyboards[i-1]) - 97
     for j in range(26):
-        alpha_sum[i][j] += alpha_sum[i-1][j]
-          
-q_num = int(sys.stdin.readline().strip())
+        if j == key:
+            alpha_sum[i][j] = alpha_sum[i-1][j] + 1
+        else:
+            alpha_sum[i][j] = alpha_sum[i-1][j]
 
+q_num = int(input().rstrip())
 for i in range(q_num):
-    a, l ,r = sys.stdin.readline().strip().split()
-    l , r = map(int, [l, r])
-    a = ord(a)
-    rs = alpha_sum[r][ a - minimum]
-    if l > 0:
-        rs -= alpha_sum[l-1][a - minimum ]
-    print(rs)
+    a, l ,r = input().rstrip().split()
+    l = int(l)
+    r = int(r)
+    a = ord(a) - ord("a")
+    sys.stdout.write(str(alpha_sum[r+1][a] - alpha_sum[l][a]) + "\n")

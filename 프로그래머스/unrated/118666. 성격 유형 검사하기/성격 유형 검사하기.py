@@ -3,7 +3,6 @@ def solution(surveys, choices):
     character = ["RT","CF","JM","AN"]
     character_type = {1:"RT", 2:"CF", 3:"JM", 4:"AN"}
     exam_character_type = { c:0 for ch in character for c in ch}
-    # print(exam_character_type)
     for choice, survey in zip(choices, surveys):
         if choice == 4:
             continue

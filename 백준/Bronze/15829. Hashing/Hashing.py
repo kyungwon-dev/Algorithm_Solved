@@ -1,4 +1,3 @@
-import enum
 import sys
 L = int(sys.stdin.readline().strip())
 M = 1234567891

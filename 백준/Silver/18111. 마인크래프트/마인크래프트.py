@@ -5,16 +5,15 @@ grounds = [ list(map(int, sys.stdin.readline().strip().split())) for _ in range(
 
 answer_time, answer_height = sys.maxsize , 0
 height_count = [ 0 for _ in range(256 + 1)]
+min_height = min( [min(ground) for ground in grounds])
 max_height = 0
 
 for ground in grounds:
     for g in ground:
         height_count[g] +=1
         max_height += g
-
-
-min_height = min( [min(ground) for ground in grounds])
-max_height = (max_height + B) // (M * N) 
+        
+max_height = (max_height + B) // (M * N)
 
 height = min_height
 while height <= max_height:
@@ -22,7 +21,7 @@ while height <= max_height:
     time = 0
     bag = B
     
-    for h in range( min_height, min(256+1, 256 + 1)):
+    for h in range( min_height, 256 + 1):
         if height < h:
             time += (height_count[h]) * ( h - height) * 2
             bag += (height_count[h]) * ( h - height)

@@ -1,4 +1,4 @@
-MAX = 102
+MAX = 101
 boards = [[False for _ in range(MAX)] for _ in range(MAX)]
 dy = [0,-1,0,1]
 dx = [1,0,-1,0]
@@ -25,8 +25,8 @@ for i in range(N):
         x = x + dx[m]
         boards[y][x] = True
 cnt = 0
-for i in range(MAX-1):
-    for j in range(MAX-1):
+for i in range(MAX):
+    for j in range(MAX):
         if boards[i][j] and boards[i-1][j] and boards[i][j-1] and boards[i-1][j-1]:
             cnt+=1
 print(cnt)

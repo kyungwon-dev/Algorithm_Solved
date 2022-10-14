@@ -1,4 +1,4 @@
-MAX = 110
+MAX = 102
 boards = [[False for _ in range(MAX)] for _ in range(MAX)]
 dy = [0,-1,0,1]
 dx = [1,0,-1,0]

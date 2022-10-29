@@ -14,22 +14,27 @@ class Solution {
             for(Map.Entry<String,String> set : map.entrySet()){
                 bab = bab.replace(set.getKey(),set.getValue());
             }
+            boolean[] isSay = new boolean[4];
             for(int i=0;i<bab.length();i++){
                 if(i==0){
-                    if(bab.charAt(i) > '9' || bab.charAt(i) < '0'){
+                    if(bab.charAt(i) > '3' || bab.charAt(i) < '0'){
                         isPossible = false;
                         break;
-                    }        
+                    }
+                    isSay[bab.charAt(i) - '0'] = true;
                 }
                 else{
-                    if(bab.charAt(i) > '9' || bab.charAt(i) < '0'){
+                    if(bab.charAt(i) > '3' || bab.charAt(i) < '0'){
                         isPossible = false;
                         break;
                     }
-                    else if(bab.charAt(i-1) == bab.charAt(i)){
+                    else if(isSay[bab.charAt(i) - '0']){
                         isPossible = false;
                         break;
                     }
+                    
+                    
+                    isSay[bab.charAt(i) - '0'] = true;
                 }
             }
             if(isPossible){

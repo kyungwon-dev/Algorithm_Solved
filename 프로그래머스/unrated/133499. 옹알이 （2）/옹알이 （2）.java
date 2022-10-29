@@ -16,13 +16,13 @@ class Solution {
             }
             for(int i=0;i<bab.length();i++){
                 if(i==0){
-                    if(bab.charAt(i) > '9' || bab.charAt(i) < '0'){
+                    if(bab.charAt(i) > '3' || bab.charAt(i) < '0'){
                         isPossible = false;
                         break;
                     }        
                 }
                 else{
-                    if(bab.charAt(i) > '9' || bab.charAt(i) < '0'){
+                    if(bab.charAt(i) > '3' || bab.charAt(i) < '0'){
                         isPossible = false;
                         break;
                     }
@@ -33,7 +33,6 @@ class Solution {
                 }
             }
             if(isPossible){
-                // System.out.println(bab);
                 answer++;
             }
         }

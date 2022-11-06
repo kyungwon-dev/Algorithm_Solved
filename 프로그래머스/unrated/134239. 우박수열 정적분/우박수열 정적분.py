@@ -17,6 +17,6 @@ def solution(k, ranges):
         else:
             l_sum = sums[-1] - sums[left]
             r_sum = sums[-1] - sums[len(sums)-1 + right]
-            answer.append(l_sum - r_sum if l_sum >= r_sum else -1.0)
+            answer.append(l_sum - r_sum)
     
     return answer

@@ -33,7 +33,7 @@ class Solution {
             songs.put(genres[i],songs.getOrDefault(genres[i],0)+plays[i]);
             musics.get(genres[i]).add(new Music(i, plays[i]));
         }
-        
+        //
         List<String> list = new ArrayList<>(songs.keySet());
         list.sort(new Comparator<String>(){
             @Override

@@ -1,31 +1,35 @@
-import java.util.Scanner;
-
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 public class Main{
 
-    static long isRecursionCount = 0;
+    static int n, cnt;
 
-    static int recursion(String s, int l, int r){
-        isRecursionCount++;
-        if(l >= r) 
-            return 1;
-        else if(s.charAt(l) != s.charAt(r)) 
-            return 0;
-        else
-            return recursion(s, l+1, r-1);
+    public static int recursion(String str, int left, int right){
+        cnt++;
+        if(left >= right) return 1;
+        else if(str.charAt(left) != str.charAt(right)) return 0;
+        else return recursion(str, left + 1, right - 1);
     }
 
-    static int isPalindrome(String s){
-        return recursion(s, 0, s.length()-1);
+    public static int isPalindrome(String str){
+        return recursion(str, 0, str.length() - 1);
     }
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int T = Integer.parseInt(sc.nextLine());
-        for(int i=0;i<T;i++){
-            String sentence = sc.nextLine();
-            System.out.printf("%d %d\n", isPalindrome(sentence) , isRecursionCount);
-            isRecursionCount = 0;
+    public static void main(String[] args) throws IOException{        
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine()," ");
+        StringBuilder sb;
+
+        // 입력 및 초기화
+        n = Integer.parseInt(st.nextToken());
+        for(int i=0;i<n;i++){
+            sb = new StringBuilder(br.readLine());
+            // System.out.println();
+            cnt = 0;
+            System.out.println(isPalindrome(sb.toString()) + " " + cnt);
         }
-        sc.close();
     }
+
 }

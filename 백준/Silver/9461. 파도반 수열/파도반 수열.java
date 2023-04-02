@@ -18,8 +18,7 @@ public class Main{
             triangle[i] = triangle[i-1] + triangle[i-5];
         }
         for(int i=0;i<n;i++){
-            st = new StringTokenizer(br.readLine(), " ");
-            sb.append(triangle[Integer.parseInt(st.nextToken()) - 1 ] + "\n");
+            sb.append(triangle[Integer.parseInt(br.readLine()) - 1 ] + "\n");
         }
         System.out.print(sb.toString());
     }

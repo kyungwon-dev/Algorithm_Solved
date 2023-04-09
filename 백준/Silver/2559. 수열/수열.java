@@ -8,10 +8,10 @@ public class Main{
         // 입력
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine()," ");
-        int n = Integer.parseInt(st.nextToken());
-        int k = Integer.parseInt(st.nextToken());
 
         // 사용할 변수
+        int n = Integer.parseInt(st.nextToken());
+        int k = Integer.parseInt(st.nextToken());
         int[] nums = new int[n+1];
         int idx = 1; 
         int answer = Integer.MIN_VALUE;

@@ -25,12 +25,12 @@ public class Main{
                 colorPaper[i][j++] = Integer.parseInt(st.nextToken());
             }
         }
-        calcPapers(0, 0, 0, n, n);
+        calcPapers(0, 0, n, n);
         System.out.println(countPapers[0]);
         System.out.println(countPapers[1]);
     }
 
-    public static void calcPapers(int pos, int sx, int sy, int dx, int dy){
+    public static void calcPapers(int sx, int sy, int dx, int dy){
         boolean isBlue = false;
         boolean isWhite = false;
         for(int i=sy;i<dy;i++){
@@ -42,10 +42,10 @@ public class Main{
         }
 
         if(isWhite && isBlue){
-            calcPapers(1, (sx + dx)/2 , sy, dx, (sy + dy)/2); // 1사분면
-            calcPapers(2, (sx + dx)/2, (sy + dy)/2, dx, dy); // 2사분면
-            calcPapers(3, sx, (sy + dy)/2 , (sx + dx)/2, dy); // 3사분면
-            calcPapers(4, sx, sy, (sx + dx)/2, (sy + dy)/2); // 4사분면
+            calcPapers((sx + dx)/2 , sy, dx, (sy + dy)/2); // 1사분면
+            calcPapers((sx + dx)/2, (sy + dy)/2, dx, dy); // 2사분면
+            calcPapers(sx, (sy + dy)/2 , (sx + dx)/2, dy); // 3사분면
+            calcPapers(sx, sy, (sx + dx)/2, (sy + dy)/2); // 4사분면
         }
         else{
             if(isWhite){

@@ -7,26 +7,24 @@ public class Main{
     public static void main(String[] args) throws IOException{        
         // 입력
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
         StringBuilder sb = new StringBuilder();
 
-        int n = Integer.parseInt(st.nextToken());
+        int n = Integer.parseInt(br.readLine());
         
         PriorityQueue<Integer> maxHeap = new PriorityQueue<>(n, Collections.reverseOrder(null));
         for(int i=0;i<n;i++){
-            st = new StringTokenizer(br.readLine());
-            int num = Integer.parseInt(st.nextToken());
+            int num = Integer.parseInt(br.readLine());
             if(num == 0){
                 if(maxHeap.peek() == null){
                     sb.append("0");
                 }
                 else{
-                    sb.append(maxHeap.poll().toString());
+                    sb.append(maxHeap.poll());
                 }
                 sb.append("\n");
             }
             else{
-                maxHeap.add(num);
+                maxHeap.offer(num);
             }
         }
         System.out.println(sb.toString());

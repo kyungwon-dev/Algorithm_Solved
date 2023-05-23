@@ -9,10 +9,10 @@ public class Main{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
         StringBuilder sb = new StringBuilder();
-        PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder(null));
 
         int n = Integer.parseInt(st.nextToken());
-
+        
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>(n, Collections.reverseOrder(null));
         for(int i=0;i<n;i++){
             st = new StringTokenizer(br.readLine());
             int num = Integer.parseInt(st.nextToken());

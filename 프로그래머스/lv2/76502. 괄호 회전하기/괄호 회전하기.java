@@ -4,6 +4,7 @@ class Solution {
     public int solution(String s) {
         Stack<Integer> stack = new Stack<Integer>();
         int answer = 0;
+        if(s.length()%2!=0) return answer;
         for(int i=0;i<s.length();i++){
             String tmp = s.substring(1,s.length());
             s = tmp + s.charAt(0);
@@ -28,10 +29,7 @@ class Solution {
                         popValue = 1;
                     else
                         popValue = 2;
-                    if(stack.peek() == popValue){
-                        stack.pop();
-                    }
-                    else{
+                    if(stack.pop() != popValue){
                         isMake = false;
                         break;
                     }
@@ -41,8 +39,6 @@ class Solution {
                 answer++;                
             }
         }
-        
-        
         return answer;
     }
 }

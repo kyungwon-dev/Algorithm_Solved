@@ -1,14 +1,23 @@
-SELECT EXTRACT(YEAR FROM s.sales_date) AS year,
-       EXTRACT(MONTH FROM s.sales_date) AS month,
-       COUNT(DISTINCT s.user_id) AS puchased_users,
-       ROUND(COUNT(DISTINCT s.user_id) / (SELECT COUNT(user_id)
-                                            FROM user_info
-                                           WHERE EXTRACT(YEAR FROM joined) = 2021), 1)
-                                              AS puchased_ratio
-  FROM user_info i
- INNER JOIN online_sale s
-    ON i.user_id = s.user_id
- WHERE EXTRACT(YEAR FROM i.joined) = 2021
- GROUP BY EXTRACT(YEAR FROM s.sales_date),
-          EXTRACT(MONTH FROM s.sales_date)
- ORDER BY year ASC, month ASC;
+-- 코드를 입력하세요
+SELECT A.YEAR, TO_NUMBER(A.MONTH) as MONTH, A.PUCHASED_USERS, ROUND(A.PUCHASED_USERS / B.TOTAL, 1) AS PUCHASED_RATIO
+FROM
+(
+SELECT TO_CHAR(SALES_DATE, 'YYYY') AS YEAR
+     , TO_CHAR(SALES_DATE, 'MM') AS MONTH
+     , COUNT(distinct A.USER_ID) AS PUCHASED_USERS
+  FROM ONLINE_SALE A
+    , (
+         SELECT USER_ID
+          FROM USER_INFO
+         WHERE TO_CHAR(JOINED, 'YYYY') = '2021' 
+     ) C
+WHERE 1 = 1
+  AND A.USER_ID = C.USER_ID
+ GROUP BY TO_CHAR(SALES_DATE, 'MM'), TO_CHAR(SALES_DATE, 'YYYY')
+) A
+     , (
+         SELECT COUNT(USER_ID) AS TOTAL
+          FROM USER_INFO
+         WHERE TO_CHAR(JOINED, 'YYYY') = '2021' 
+     ) B
+ORDER BY YEAR ASC, MONTH ASC

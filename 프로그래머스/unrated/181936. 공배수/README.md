@@ -1,10 +1,10 @@
 # [level unrated] 공배수 - 181936 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181936?language=cpp) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181936?language=java) 
 
 ### 성능 요약
 
-메모리: 3.66 MB, 시간: 0.01 ms
+메모리: 71.9 MB, 시간: 0.02 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 10월 1일 21:42:16
+2023년 10월 1일 21:43:0
 
 ### 문제 설명
 

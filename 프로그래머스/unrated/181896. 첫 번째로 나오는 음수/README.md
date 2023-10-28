@@ -1,10 +1,10 @@
 # [level unrated] 첫 번째로 나오는 음수 - 181896 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181896?language=java) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181896?language=cpp) 
 
 ### 성능 요약
 
-메모리: 74.9 MB, 시간: 0.03 ms
+메모리: 3.65 MB, 시간: 0.01 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 10월 6일 21:12:22
+2023년 10월 6일 21:13:12
 
 ### 문제 설명
 

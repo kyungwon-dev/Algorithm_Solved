@@ -1,10 +1,10 @@
 # [level unrated] flag에 따라 다른 값 반환하기 - 181933 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181933) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181933?language=java) 
 
 ### 성능 요약
 
-메모리: 3.71 MB, 시간: 0.01 ms
+메모리: 78.3 MB, 시간: 0.04 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 10월 6일 20:25:6
+2023년 10월 6일 20:25:40
 
 ### 문제 설명
 

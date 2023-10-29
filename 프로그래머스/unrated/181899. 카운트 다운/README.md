@@ -1,10 +1,10 @@
 # [level unrated] 카운트 다운 - 181899 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181899?language=java) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181899?language=cpp) 
 
 ### 성능 요약
 
-메모리: 64.9 MB, 시간: 0.01 ms
+메모리: 4.21 MB, 시간: 0.02 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 10월 0일 20:9:12
+2023년 10월 0일 20:9:56
 
 ### 문제 설명
 

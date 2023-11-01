@@ -1,10 +1,10 @@
 # [level unrated] 할 일 목록 - 181885 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181885?language=cpp) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181885?language=java) 
 
 ### 성능 요약
 
-메모리: 4.14 MB, 시간: 0.02 ms
+메모리: 73.5 MB, 시간: 0.02 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 11월 4일 0:35:2
+2023년 11월 4일 0:37:23
 
 ### 문제 설명
 

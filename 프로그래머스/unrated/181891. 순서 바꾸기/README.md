@@ -1,10 +1,10 @@
 # [level unrated] 순서 바꾸기 - 181891 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181891?language=java) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181891?language=cpp) 
 
 ### 성능 요약
 
-메모리: 77.7 MB, 시간: 0.02 ms
+메모리: 4.15 MB, 시간: 0.02 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 11월 3일 23:35:39
+2023년 11월 3일 23:36:46
 
 ### 문제 설명
 

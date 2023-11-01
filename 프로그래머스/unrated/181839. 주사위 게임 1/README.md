@@ -1,10 +1,10 @@
 # [level unrated] 주사위 게임 1 - 181839 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181839?language=cpp) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181839?language=java) 
 
 ### 성능 요약
 
-메모리: 4.17 MB, 시간: 0.01 ms
+메모리: 81.3 MB, 시간: 0.02 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 11월 3일 23:22:53
+2023년 11월 3일 23:23:55
 
 ### 문제 설명
 

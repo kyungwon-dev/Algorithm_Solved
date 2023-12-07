@@ -1,10 +1,10 @@
 # [level unrated] 5명씩 - 181886 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181886?language=java) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181886?language=python3) 
 
 ### 성능 요약
 
-메모리: 74.8 MB, 시간: 0.02 ms
+메모리: 10.1 MB, 시간: 0.00 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 12월 4일 17:33:11
+2023년 12월 4일 17:35:45
 
 ### 문제 설명
 

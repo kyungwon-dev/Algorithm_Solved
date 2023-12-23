@@ -1,10 +1,10 @@
 # [level unrated] 빈 배열에 추가, 삭제하기 - 181860 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181860?language=cpp) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181860?language=java) 
 
 ### 성능 요약
 
-메모리: 4.21 MB, 시간: 0.01 ms
+메모리: 76.4 MB, 시간: 1.77 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 12월 6일 15:34:41
+2023년 12월 6일 15:41:8
 
 ### 문제 설명
 

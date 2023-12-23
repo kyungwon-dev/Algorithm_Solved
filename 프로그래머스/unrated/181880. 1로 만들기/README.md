@@ -1,10 +1,10 @@
 # [level unrated] 1로 만들기 - 181880 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181880) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181880?language=java) 
 
 ### 성능 요약
 
-메모리: 4.17 MB, 시간: 0.01 ms
+메모리: 75.7 MB, 시간: 0.02 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 12월 6일 16:17:48
+2023년 12월 6일 16:18:23
 
 ### 문제 설명
 

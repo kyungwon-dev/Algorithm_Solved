@@ -1,10 +1,10 @@
 # [level unrated] 특정 문자열로 끝나는 가장 긴 부분 문자열 찾기 - 181872 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181872?language=java) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181872?language=python3) 
 
 ### 성능 요약
 
-메모리: 78.2 MB, 시간: 1.49 ms
+메모리: 10.1 MB, 시간: 0.01 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 12월 4일 21:6:48
+2023년 12월 4일 21:9:27
 
 ### 문제 설명
 

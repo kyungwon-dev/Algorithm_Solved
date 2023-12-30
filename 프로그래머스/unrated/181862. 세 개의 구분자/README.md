@@ -1,10 +1,10 @@
 # [level unrated] 세 개의 구분자 - 181862 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181862?language=java) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181862?language=python3) 
 
 ### 성능 요약
 
-메모리: 119 MB, 시간: 48.87 ms
+메모리: 21 MB, 시간: 32.79 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 12월 6일 15:46:53
+2023년 12월 6일 15:50:55
 
 ### 문제 설명
 

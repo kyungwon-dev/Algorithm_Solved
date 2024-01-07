@@ -8,6 +8,7 @@ int solution(vector<vector<int>> board)
     int mx = 0;
     int dy[3] = {0,-1,-1};
     int dx[3] = {-1,-1,0};
+        
     if(board.size()==1 || board[0].size()==1){
         for(int i=0;i<board.size();i++){
             for(int j=0;j<board[0].size();j++){
@@ -17,6 +18,7 @@ int solution(vector<vector<int>> board)
         }
         return answer;
     }
+
     for(int i=1;i<board.size();i++){
         for(int j=1;j<board[i].size();j++){
             if(board[i][j] == 1){
@@ -33,7 +35,7 @@ int solution(vector<vector<int>> board)
             }
         }
     }
-    
+
     
     return answer * answer;
 }

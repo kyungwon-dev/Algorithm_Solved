@@ -1,10 +1,10 @@
 # [level unrated] 두 수의 합 - 181846 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181846?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181846?language=java) 
 
 ### 성능 요약
 
-메모리: 10.6 MB, 시간: 172.14 ms
+메모리: 375 MB, 시간: 2379.55 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 1월 0일 18:30:39
+2024년 1월 0일 18:49:4
 
 ### 문제 설명
 

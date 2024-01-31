@@ -19,6 +19,7 @@ int solution(vector<int> rank, vector<bool> attendance) {
             answer = answer + (mul * indexMap[iter->first]);
             mul /= 100;
         }
+        if(mul==0) break;
         
     } 
     return answer;

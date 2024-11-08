@@ -45,8 +45,6 @@ def solution(n, t, m, timetable):
             pos = min(board_dict[k])
             if pos == max(board_dict[k]):
                 pos-=1
-            else:
-                pos= max(board_dict[k]) - 1                        
             answer = pos
             break
     
